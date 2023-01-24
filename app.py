@@ -55,16 +55,3 @@ if privacy_policy_url:
     # Send the results to the JSON file
     with open('privacy_policy_word_counts.json', 'w') as outfile:
         json.dump(dict(word_counts), outfile)
-
-
-
-
-# How would I improve the code if I had more time to make it more robust?
-
-# 1) the Main thing would be error handling and test cases: Implementing Try-Except to catch errors, and even check to ensure I get a 200 response before going ahead with the parsed data
-
-# 2) Some websites load data dynamically and I believe this would cause issues with scraping. I would need to an external library to wait for the page to be fully loaded before scraping occurs
-
-# 3) Find ways to handle sites that have Captchas before accessing. This is more difficult but can be done making use of machine learning libraries
-
-# 4) With regards to international languages: Ensure the app can handle different characters and still pull the required data to the json files. We could also use langauge detection libraries like "langdetect" to find out which language we are dealing with and then use a language specific library to deal with that scenario to reduce the likelihood of errors
