@@ -12,7 +12,7 @@ Firslty please make sure you have python downloaded and up to date (refer to htt
 
 Then clone this repository by clicking 'Code' at the top of the repo and then clicking 'Download ZIP'. After this you want to place the zip file in a folder of your choice and unzip the contents. After this has been completed you want to open your terminal within the specific folder, an easy way to do this is to right click the folder and click "New terminal at folder (on Mac)".
 
-After this, using pip in the terminal, we can use:
+After this, using pip, we can execute:
 
 ```bash
 pip install -r requirements.txt
